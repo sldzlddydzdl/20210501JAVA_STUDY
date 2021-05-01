@@ -1,0 +1,30 @@
+package test;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	Scanner input = new Scanner(System.in);
+	int A = input.nextInt();
+//	int B = input.nextInt();
+	
+	if(A%4 == 0) {
+		if(A%100 != 0) {
+			System.out.println("1");
+		}
+	}
+	
+	if(A%100 == 0) {
+		if(A%400 != 0) {
+			System.out.println("0");
+		}
+		else if(A%400 == 0) {
+			System.out.println("1");
+		}
+	}
+
+	}
+
+}

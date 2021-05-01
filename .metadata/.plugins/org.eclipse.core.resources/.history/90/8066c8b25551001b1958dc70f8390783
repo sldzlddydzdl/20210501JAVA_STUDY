@@ -1,0 +1,20 @@
+package test;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	Scanner input = new Scanner(System.in);
+	int A = input.nextInt();
+	int B = input.nextInt();
+	
+	System.out.println(A*(B - (B/100*100) - (B/10*10) ));
+	System.out.println(A*(B - B/100*100));
+	System.out.println(A*(B/100));
+	System.out.println(A*B);
+	System.out.println((B/100*100));
+	}
+
+}

@@ -1,0 +1,15 @@
+package ex01;
+
+public class Ex08 {
+	public static void main(String[] args) {
+		// 예외 객체를 직접 발생시키기
+		//System.out.println(10/0);
+		
+//		new ArithmeticException();
+		// 위는 그냥 객체를 생성한거밖에없다.
+		throw new ArithmeticException();
+		// 위는 이제 예외가 발생한다. 예외를 직접만든거다.
+//		System.out.println("끝");
+				
+	}
+}

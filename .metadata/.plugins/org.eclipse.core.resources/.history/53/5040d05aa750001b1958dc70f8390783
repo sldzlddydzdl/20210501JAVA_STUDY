@@ -1,0 +1,20 @@
+package test;
+
+public class test01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.print("java\n"); // print 줄바꿈이 저절로안됨
+		System.out.println("java2"); // println 줄바꿈이 저절로됨
+		System.out.println("java3");
+		System.out.printf("%s\n" , "java4"); // printf %s %c %f %d 로 타입에맞게 무엇을 넣을지 할수 있다.
+											 // 줄바꿈이 저절로안된다.
+		
+		System.out.printf("현재 입력한 %d 입니다\n" , 100); 
+		System.out.printf("%c\n" , 'a');
+		System.out.printf("%s\n" , "java");
+		System.out.printf("%3lf\n" , 35.7);
+		
+	}
+
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="425.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.loginController">
+   <children>
+      <TextField fx:id="loginid" layoutX="27.0" layoutY="73.0" prefHeight="28.0" prefWidth="201.0" promptText="아이디" />
+      <PasswordField fx:id="loginpw" layoutX="27.0" layoutY="111.0" prefHeight="28.0" prefWidth="201.0" promptText="비밀번호" />
+      <Label layoutX="22.0" layoutY="26.0" prefHeight="35.0" prefWidth="228.0" text="Student management">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="214.0" fitWidth="433.0" layoutX="14.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@login.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnlogin" layoutX="246.0" layoutY="61.0" mnemonicParsing="false" onAction="#login" prefHeight="35.0" prefWidth="85.0" style="-fx-background-color: #FFFFFF;" text="로그인">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="YELLOW" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="btnsignup" layoutX="246.0" layoutY="122.0" mnemonicParsing="false" onAction="#signup" prefHeight="35.0" prefWidth="85.0" style="-fx-background-color: #FFFFFF;" text="회원가입">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

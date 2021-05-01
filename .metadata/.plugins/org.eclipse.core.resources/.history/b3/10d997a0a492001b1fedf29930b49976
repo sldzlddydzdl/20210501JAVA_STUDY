@@ -1,0 +1,10 @@
+package prac;
+
+public class 두수의합 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

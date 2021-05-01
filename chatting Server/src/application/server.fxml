@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="299.0" prefWidth="318.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea fx:id="txtserver" layoutX="59.0" layoutY="8.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="btnstart" layoutX="64.0" layoutY="234.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="191.0" text="서버실행" />
+   </children>
+</AnchorPane>

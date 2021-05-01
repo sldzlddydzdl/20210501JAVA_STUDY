@@ -1,0 +1,20 @@
+package ex01;
+
+import java.util.Scanner;
+
+public class Ex04 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("숫자를 입력하세요");
+		try {
+			int num = sc.nextInt();			
+		}catch(Exception e) {
+			System.out.println("예외 발생");
+		}finally {
+			sc.close();
+			System.out.println("클로즈함!");
+		}
+		
+	}
+}

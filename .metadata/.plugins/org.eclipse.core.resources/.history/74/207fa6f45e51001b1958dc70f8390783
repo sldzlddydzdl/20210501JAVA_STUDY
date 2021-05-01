@@ -1,0 +1,39 @@
+package test;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	Scanner input = new Scanner(System.in);
+	int A = input.nextInt();
+	int B = input.nextInt();
+	
+	if(A > 0) {
+		if(B > 0) {
+			System.out.println("1");
+		}
+	}
+	
+	if(A < 0) {
+		if(B > 0) {
+			System.out.println("2");
+		}
+	}
+
+	if(A < 0) {
+		if(B < 0) {
+			System.out.println("3");
+		}
+	}
+	
+	if(A > 0) {
+		if(B < 0) {
+			System.out.println("4");
+		}
+	}
+	
+	}
+
+}

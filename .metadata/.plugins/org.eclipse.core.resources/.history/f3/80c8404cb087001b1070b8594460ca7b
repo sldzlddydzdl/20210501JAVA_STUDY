@@ -1,0 +1,72 @@
+package main;
+
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	      Scanner sc = new Scanner(System.in);
+	      int N = sc.nextInt();
+	      
+	      int[] meter = new int[N-1];
+	      int[] meterprice = new int[N];
+	      
+	      int sum = 0;
+	      int min = 1000000000;
+	      int max = 0;
+	      for(int i = 0; i < N-1; i++) {
+	    	meter[i] = sc.nextInt();
+	      }
+	      
+	      for(int i = 0 ; i < N; i++) {
+	    	  meterprice[i] = sc.nextInt();
+	      }
+	      
+	      sum += meterprice[0]*meter[0];
+	      
+	      
+	      for(int i = 1 ; i < meter.length; i++) {
+	    	  
+	    	  min = Math.min(min, meterprice[i]);
+	    	  
+	    	  max = Math.max(max, meterprice[i]);
+	      }
+	      
+	      int minindex = getIndex(meterprice, min);
+	      int maxindex = getIndex(meterprice, max);
+	      System.out.println("minindex : " + minindex);
+	      System.out.println("maxindex : " + maxindex);
+	      System.out.println(min);
+	      System.out.println(max);
+	      for(int i= 1; i < meter.length; i++) {
+	    	  sum += min*meter[i];
+	      }
+	      System.out.println(sum);
+	      
+	      
+	}
+
+	public static int getIndex(int[] array, Object obj) {
+	
+	for(int i = 0 ; i < array.length; i++) {
+		if(obj.equals(array[i])) {
+			return i;
+		}
+	}
+		
+	return -1;
+}
+
+}
+//3
+//3 1 
+//3 1 4
+//3 1 4 3
+//3 1 4 3 2
+//1 
+//1 2
+//1 2 3
+//1 2 3 3
+//1 2 3 3 4

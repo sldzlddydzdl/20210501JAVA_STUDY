@@ -1,0 +1,27 @@
+package test;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	Scanner input = new Scanner(System.in);
+	int A = input.nextInt();
+	int B = input.nextInt();
+	
+	B = B - 45;
+	
+	if(B < 0) {
+		B =  B + 60;
+		A = A - 1;
+		if(A < 0) {
+			A = A + 24;
+		}
+	}
+		
+	System.out.println(A + " " + B);
+	
+	}
+
+}

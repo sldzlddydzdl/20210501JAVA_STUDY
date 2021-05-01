@@ -1,0 +1,43 @@
+package test;
+
+import java.util.Scanner;
+
+
+
+public class Main {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	      Scanner sc = new Scanner(System.in);
+	      
+	      int N = sc.nextInt();
+	      
+	      String output = "    ";
+	      for(int i =1; i <= N; i++) {
+	    	  output += "*";
+	    	  System.out.println(output);
+	      }
+	      
+	      
+	      
+	      
+	      //star(N, N);
+	      
+
+	   }
+	   
+	   /*
+	    * public static void star(int N, int count) {
+	    
+	      
+	      for(int i=--count; i<N; i++)
+	         System.out.print("*");
+	      System.out.println();
+	      
+	      if(count>0)
+	         star(N, count);
+	      
+	   }
+		*/
+}
+
+

@@ -1,0 +1,397 @@
+package test;
+
+import java.util.Scanner;
+
+
+
+public class Main {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	    /*  
+		Scanner sc = new Scanner(System.in);
+	      
+	      int N = sc.nextInt();
+	      
+	      
+	      for ( int i = 1 ; i <= N ; i++ ){
+	    		for( int j = 1 ; j <= N-i ; j++ ) {
+	    			System.out.printf(" ");
+	    		}
+	    		for( int k = 1 ; k <= i ; k++ ){
+	    			System.out.printf("*");
+	    		}
+	    		System.out.printf("\n");
+	    	}
+		*/
+	      
+		// 계산기만들기  [ Scanner , printfln , if ]
+					//[ 조건 ] : 두개의 수를 입력받아 입력받은 기호로 계산 
+					//[ 예 ] : 
+							// [입력] 2 + 3
+							// [출력] 2 + 3  결과 : 5
+							
+							// [입력] 3 * 2
+							// [출력] 3 * 2  결과 : 6
+		
+		/*
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("두수와 연산을 입력 하세요 : ");
+		
+		boolean key = true;
+		while(key) {
+			
+			int num1 = sc.nextInt();
+			char cal = sc.next().charAt(0);
+			int num2 = sc.nextInt();
+			
+			if(cal == '+') {
+				System.out.println("두수의 덧셈은 : " + (num1 + num2) + " 입니다.");
+			}
+			else if(cal =='-') {
+				System.out.println("두수의 뺄셈은 : " + (num1 - num2) + " 입니다.");
+			}
+			else if(cal == '/') {
+				System.out.println("두수의 나눗셈은 : " + (num1 / num2) + " 입니다.");
+			}
+			else if(cal == '*') {
+				System.out.println("두수의 곱은 : " + (num1 * num2) + " 입니다.");
+			}
+			else if(cal == '%') {
+				System.out.println("두수의 나머지는 : " + (num1 % num2) + " 입니다.");
+			}
+			else if(cal =='Q') {
+				System.out.println("종료되었습니다. ");
+				key = false;
+			}
+			else {
+				System.out.println("잘못 입력 하셨습니다.");
+			}
+			
+		}
+		*/
+		
+		
+
+		/* 회원가입 / 로그인 만들기 
+		 *  회원가입
+				ID , PW 입력받아 변수에 저장 
+			로그인 [ 무한루프 ] 
+				ID , PW 가 동일한 경우 무한루프 종료
+				ID , PW 가 동일하지 않으면 무한루프
+		*/
+		
+		
+		/*
+		Scanner sc = new Scanner(System.in);
+		
+		
+		System.out.println("------- 회원가입 창 ---------");
+		System.out.print("가입할 아이디를 입력하세요 : ");
+		String id = sc.next();
+			
+		System.out.print("가입할 비밀번호를 입력하세요 : ");
+		String pw = sc.next();
+		
+		System.out.print("회원가입이 완료되었습니다 .");
+		
+		boolean key = true;
+		while(key) {
+		System.out.println("------- 로그인 창 ---------");
+		System.out.print("로그인할 아이디를 입력하세요 : ");
+		String id2 = sc.next();
+		
+		System.out.print("로그인할 비밀번호를 입력하세요 : ");
+		String pw2 = sc.next();
+		
+		if(id.equals(id2)) {
+			if(pw.equals(pw2)) {
+				System.out.println("로그인되었습니다.");
+				key = false;
+			}
+			else {
+				System.out.println("비밀번호가 틀렸습니다. ");
+			}
+		}
+		else {
+			System.out.println("아이디가 틀렸습니다. ");
+		}
+		
+		
+		}
+		
+		
+		*/
+		/*
+		 * 키오스크 만들기 
+			* 메뉴 무한루프 번호 계속 입력받아 
+			* 입력받은 번호의 금액을 누적으로 변수에 더하기
+			* 종료 입력시 총 계산 :  누적금액 출력 
+				[ 메뉴 ] 
+				1. 아메리카노 [ 200 ]
+				2. 에이드 [ 300 ] 
+				3. 아이스크림 [ 400 ]
+				4. 과자 [ 500 ]
+				5. 종료
+		 * 
+		 * 
+		 */
+		
+		/*
+		Scanner sc = new Scanner(System.in);
+		
+		int sum = 0;
+		boolean key = true;
+		while(key) {
+			System.out.println("------- 메뉴 --------");
+			System.out.println("1. 아메리카노 [200] ");
+			System.out.println("2. 에이드 [300]");
+			System.out.println("3. 아이스크림 [400]");
+			System.out.println("4. 과자[500]");
+			System.out.println("5. 종료");
+			System.out.print("메뉴를 선택해주세요 : ");
+			int menu = sc.nextInt();
+			
+			if(menu == 1) {
+				sum += 200;
+			}
+			if(menu == 2) {
+				sum += 300;
+			}
+			if(menu == 3) {
+				sum += 400;
+			}
+			if(menu == 4) {
+				sum += 500;
+			}
+			if(menu == 5) {
+				System.out.println("총 합은 : " + sum + " 입니다.");
+				System.out.println("종료합니다.");
+				key = false;
+			}
+		}
+		*/
+		
+		/*
+		Scanner sc = new Scanner(System.in);
+		
+		int N = sc.nextInt();
+		int X = sc.nextInt();
+		
+		int[] ar = new int[N]; // 입력받을떄 새로운공간할당
+		
+		for(int i = 0; i < N; i++) {
+			ar[i] = sc.nextInt();
+		}
+		
+		for(int i =0; i <N; i++)
+		if(ar[i] < X) {
+			System.out.print(ar[i] + " ");
+		}
+		*/
+		
+		/*
+		Scanner sc = new Scanner(System.in);
+		
+		int key = 1111111;
+		
+		while(key != 0) {
+		int A = sc.nextInt();
+		int B = sc.nextInt();
+		
+		key = (A + B);
+		if(key == 0) {
+			System.out.print("");
+			break;
+		}
+		System.out.println(A + B);
+		}
+		*/
+		
+		/*
+		for(int i = 1; i <= 5; i++) {
+			for(int j = i; j < 5; j++) {
+				System.out.print(" ");
+			}
+			for(int k = 1; k <=i; k++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		*/
+		
+		/*
+		for(int i = 1; i <= 5; i ++) {
+			for(int j = i; j <= 4; j++) {
+				System.out.print(" ");
+			}
+			for(int k = 1; k <= i; k++) {
+				System.out.print("*");
+			}
+			for(int s = 2; s <= i; s++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		*/
+		
+		/*
+		Scanner sc = new Scanner(System.in);
+		int B= 0;
+		while(B != 2) {
+			int A = sc.nextInt();
+			B = sc.nextInt();
+			System.out.println(A + B);
+		}
+		*/
+		
+		/*
+		Scanner sc = new Scanner(System.in); // 입력공간 할당
+		
+		int N = sc.nextInt(); // 정수 N 입력
+		int K = N;
+		int temp = 111; // temp 초기화
+		int count = 0; // count 초기화
+
+		while(N != temp) { // 만약 N 과 temp가 같지않으면 while 안에 문장을 실행해라
+			
+			int A = K/10; 		// A = 10의자리수
+		//	System.out.println("A : " + A);
+			int B = K - A*10;	// B = 1의자리수
+		//	System.out.println("B : " +B);
+			if(A + B >= 10) {
+				if((A+B)%10 == 1) {
+					K = (B*10);
+				}
+				K = (B*10) + (A+B-10);
+			}
+			else {
+				if(K == 0) {
+					temp = K;
+				}
+				K = (B*10)+ (A+B);  // 결과
+			}
+		//	System.out.println("K : " +K);
+			temp = K; 			// 비교할 N 값 대신 대입
+			count++;
+		}
+		System.out.println(count);
+		// 5 + 5 = 10 , 50  5 + 0 = 5 , 5 
+		*/
+		
+		/* 10818번 최소, 최대
+		Scanner sc = new Scanner(System.in);
+		
+		int N = sc.nextInt();
+
+		
+		int ar[] = 	new int[N];
+		int max = -1000000;
+		int min = 10000000;
+		
+		for(int i = 0; i < N; i++) {
+			ar[i] = sc.nextInt();
+		}
+		for(int i =0; i < N; i++) {
+			if(max < ar[i]) {
+				max = ar[i];
+				// System.out.println("max : " + max);
+			}
+			if(min > ar[i]) {
+				min = ar[i];
+				// System.out.println("min : " + min);
+			}
+		}
+		System.out.println(min + " " + max);
+		*/
+	
+		/* 문제 2562
+		Scanner sc = new Scanner(System.in);
+		
+		int N = 9;
+		
+		int num = 0;
+		int max = 0;
+		int ar[] = new int[N];
+		
+		for(int i =0; i < N; i++) {
+			ar[i] = sc.nextInt();
+			if(max < ar[i]) {
+				max = ar[i];
+				num = i+1;
+			}
+		}
+		System.out.println(max);
+		System.out.println(num);
+		*/
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int A = sc.nextInt();
+		int B = sc.nextInt();
+		int C = sc.nextInt();
+		
+		int result = A*B*C;
+		
+		int ar[] = new int[10];
+		
+		for(int i =0; i < 10; i++) {
+			for(int k = 1; k<= 100000000; k = k*10)
+			if((result / k) == i) {
+				ar[i] += 1;
+			}
+		}		
+		
+		for(int i =0; i<10; i++) {
+			System.out.println(ar[i]);
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+		
+  }
+	   
+
+
+

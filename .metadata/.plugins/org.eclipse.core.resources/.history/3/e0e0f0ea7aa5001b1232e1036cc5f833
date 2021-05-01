@@ -1,0 +1,16 @@
+package ex01;
+
+import java.io.IOException;
+
+public class NullPointerExceptionEx {
+	public static void main(String[] args) {
+		MyReader mr2 = null;
+		try {
+			mr2.readString();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			System.out.println("객체가 NULL입니다.");
+		}
+	}
+}
