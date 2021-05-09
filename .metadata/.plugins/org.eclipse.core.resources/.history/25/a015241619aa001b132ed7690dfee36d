@@ -1,7 +1,0 @@
-package day20210501.ex01;
-	
-public class MyException {
-	public static void main(String[] args) {
-			
-	}	
-}	
